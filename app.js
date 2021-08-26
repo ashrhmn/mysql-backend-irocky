@@ -7,6 +7,6 @@ const app = express()
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-app.use('/api/', routes)
+app.use('/book/', routes)
 
-app.listen(5000, () => console.log(`http://localhost:5000/api`))
+app.listen(5000, () => console.log(`http://localhost:5000/book`))
